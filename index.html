@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Entrada/Saída</title>
+</head>
+<body>
+    <div class="registro-container">
+        <h1>Registro de Entrada/Saída</h1>
+        <form id="registroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <button type="button" onclick="registrarAcao('Entrada')">Registrar Entrada</button>
+            <button type="button" onclick="registrarAcao('Saída')">Registrar Saída</button>
+        </form>
+
+        <div id="registros">
+            <h2>Histórico de Registros</h2>
+            <ul id="historico"></ul>
+        </div>
+
+        <div id="totalHoras">
+            <h2>Total de Horas Trabalhadas</h2>
+            <ul id="total"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
